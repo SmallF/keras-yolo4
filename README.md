@@ -43,6 +43,7 @@ python yolo_video.py  --image #图片
 7.  修改参数文件yolo4.cfg如下图
 8.  修改model_data/voc_classes.txt，为自己需要训练的类别
 9.  开冲！文件模型保存在logs/000/里面，后面运行的时候记得，在yolo.py里面修改名字
+
 ![cfg](./font/cfg.png)
 
 ```
