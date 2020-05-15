@@ -38,7 +38,7 @@ python yolo_video.py  --image #图片
 
 1.  数据集的制作用imagelabel，会产生xml文件，并且文件名和图片名是对应的
 2.  将xml文件全部放入到VOCdevkit/VOC2007/Annotations，把图片放到VOCdevkit/VOC2007/JPEGImages
-3.  在VOCdevkit/VOC2007/ImageSets中创建三个文件夹Layout,Main,Segmentation(这里已经帮你创建好了)
+3.  在VOCdevkit/VOC2007/ImageSets中创建三个文件夹Layout,Main,Segmentation(这里已经帮你创建好了,自行删除每个文件夹的temp)
 4.  在VOCdevkit/VOC2007/目录下创建gen.py,并执行gen.py文件生成VOC2007数据说明文本文件(train.txt,val.txt,test.txt)
 5.  修改voc_annotation.py：在第六行的classes项中修改成自己训练样本的名字
 6.  执行voc_annotation.py生成可供该框架使用的数据集文件(在根目录生成2007_train.txt,2007_test.txt,2007_val.txt)
